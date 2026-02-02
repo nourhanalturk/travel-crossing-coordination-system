@@ -14,6 +14,6 @@ public class Main {
         TravelCoordinatorFacade facade = new TravelCoordinatorFacade();
 
         String requestId =facade.submitTravelRequest(traveler, payment, 150.0);
-        facade.updateTravelStatus(requestId, TravelStatus.APPROVED, UserRole.TRAVELER);
+        facade.processByBorderAuthority(requestId,UserRole.BORDER_AUTHORITY);
     }
 }
