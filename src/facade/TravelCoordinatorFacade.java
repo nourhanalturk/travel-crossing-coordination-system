@@ -13,7 +13,7 @@ import template.BorderAuthorityProcessor;
 import template.TravelRequestProcessor;
 
 public class TravelCoordinatorFacade {
-    private TravelSystemDatabase database;
+    private final TravelSystemDatabase database;
 
     public TravelCoordinatorFacade() {
         this.database = TravelSystemDatabase.getInstance();

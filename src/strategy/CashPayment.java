@@ -8,5 +8,6 @@ public class CashPayment implements PaymentStrategy {
                 "Cash Payment\n" +
                         "Amount: $" + amount + "\n"
         );
-    }
+
+  }
 }
